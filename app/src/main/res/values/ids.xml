@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="menu_ctx_edit" type="id">Thêm Thể loại</item>
+    <item name="menu_ctx_del" type="id">Vẫn là thêm thể loại</item>
+</resources>

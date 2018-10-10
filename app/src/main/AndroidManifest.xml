@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="vn.edu.poly.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="ASSLV"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Home_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ListBookActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ThemSachActivity" />
+        <activity android:name=".ListNguoiDungActivity" />
+        <activity android:name=".NguoiDungActivity" />
+
+        <activity android:name=".ListTheLoaiActivity" />
+        <activity android:name=".ThemTheLoai" />
+        <activity android:name=".ListHoaDonActivity" />
+
+        <activity android:name=".HoaDonActivity" />
+        <activity android:name=".HoaDonChiTietActivity" />
+        <activity android:name=".ListHoaDonChiTietByIDActivity" />
+        <activity android:name="ThongKeDoanhThuActivity"/>
+        <activity android:name=".LuotSachBanChayActivity"/>
+        <activity android:name=".NguoiDungDetailActivity"/>
+
+    </application>
+</manifest>

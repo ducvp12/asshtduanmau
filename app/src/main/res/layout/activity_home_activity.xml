@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/trang"
+    tools:context=".Home_activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+
+            android:background="@color/colorPrimaryDark">
+
+            <ImageView
+                android:id="@+id/menu"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/menu2" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="5dp"
+            android:text="Home"
+            android:textColor="@color/trang"
+            android:textSize="30dp" />
+
+        <RelativeLayout
+            android:id="@+id/r1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="80dp">
+
+            <ImageView
+                android:id="@+id/imgnguoidung"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/emthree" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgnguoidung"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Người dùng" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/r2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="80dp">
+
+            <ImageView
+                android:id="@+id/imgTheLoai"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="theloai"
+                android:src="@drawable/cateicon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgTheLoai"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="    Thể Loại" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/r3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/r1"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="40dp">
+
+            <ImageView
+                android:id="@+id/imgsach"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/bookicon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgsach"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:text="Sách" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/r2"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="40dp">
+
+            <ImageView
+                android:id="@+id/imgHoadon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="hoadon1"
+                android:src="@drawable/hdicon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgHoadon"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="   Hóa Đơn" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/r5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/r3"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="40dp">
+
+            <ImageView
+                android:id="@+id/imgbanchay"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="tangtruong"
+                android:src="@drawable/money_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgbanchay"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="    Thống kê" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/r3"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="40dp">
+
+            <ImageView
+                android:id="@+id/imgthongke"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="doanhso"
+                android:src="@drawable/thongke" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgthongke"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="    Doanh Số" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nvmenu"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header_layout"
+
+        app:menu="@menu/menu_navigation_view">
+
+
+    </android.support.design.widget.NavigationView>
+
+
+</android.support.v4.widget.DrawerLayout>
